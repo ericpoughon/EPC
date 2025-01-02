@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPC.Monetary", "src\EPC.Mon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPC.ExceptionMiddleware", "src\EPC.ExceptionMiddleware\EPC.ExceptionMiddleware.csproj", "{94B4F64D-D7C0-4249-A832-41BC4641F263}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPC.Guarding", "src\EPC.Guarding\EPC.Guarding.csproj", "{CD6F986D-5B52-48F1-9BC7-382BFE36D25C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{94B4F64D-D7C0-4249-A832-41BC4641F263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94B4F64D-D7C0-4249-A832-41BC4641F263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94B4F64D-D7C0-4249-A832-41BC4641F263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD6F986D-5B52-48F1-9BC7-382BFE36D25C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6F986D-5B52-48F1-9BC7-382BFE36D25C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6F986D-5B52-48F1-9BC7-382BFE36D25C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6F986D-5B52-48F1-9BC7-382BFE36D25C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +43,6 @@ Global
 		{1DF7AC75-F195-47D5-9966-F47F816F09CB} = {56F6B333-0E14-4068-B89A-D38D484DF803}
 		{F0ECBC9C-AF48-44C6-9FE1-EA0CE6A799B5} = {56F6B333-0E14-4068-B89A-D38D484DF803}
 		{94B4F64D-D7C0-4249-A832-41BC4641F263} = {56F6B333-0E14-4068-B89A-D38D484DF803}
+		{CD6F986D-5B52-48F1-9BC7-382BFE36D25C} = {56F6B333-0E14-4068-B89A-D38D484DF803}
 	EndGlobalSection
 EndGlobal
