@@ -17,13 +17,6 @@
         /// </summary>
         public required string Name { get; init; }
 
-        public static IReadOnlyCollection<Currency> All { get; } = typeof(Currency).GetFields(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public)
-                                                                                   .Where(field => field.FieldType == typeof(Currency))
-                                                                                   .Select(field => (Currency)field.GetValue(null)!)
-                                                                                   .ToList();
-
-        public static IReadOnlyDictionary<CurrencyCode, Currency> AllByCode { get; } = All.ToDictionary(x => x.Code);
-
         #region All
 
         /* https://en.wikipedia.org/wiki/ISO_4217#Active_codes_(list_one)
@@ -922,5 +915,13 @@
         public static Currency ZWG { get; } = new Currency { Code = CurrencyCode.ZWG, Precision = 2, Name = "Zimbabwe Gold" };
 
         #endregion
+
+        // IMPORTANT: This need to be AFTER all the currency properties!
+        public static IReadOnlyCollection<Currency> All { get; } = typeof(Currency).GetProperties(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public)
+                                                                           .Where(property => property.PropertyType == typeof(Currency))
+                                                                           .Select(property => (Currency)property.GetValue(null)!)
+                                                                           .ToList();
+
+        public static IReadOnlyDictionary<CurrencyCode, Currency> AllByCode { get; } = All.ToDictionary(x => x.Code);
     }
 }
