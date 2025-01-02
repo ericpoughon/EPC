@@ -15,6 +15,11 @@
         /// </summary>
         public string ErrorCode { get; }
 
+        /// <summary>
+        /// URI to exception documentation.
+        /// </summary>
+        public virtual Uri? DocumentationUri { get; }
+
         public BaseException(string code, string message) : base(message)
         {
             ErrorCode = code;
