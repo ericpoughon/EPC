@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPC.Exceptions", "EPC.Exceptions\EPC.Exceptions.csproj", "{4F9E9816-58EB-43DF-A6FD-8FE7E747156C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{56F6B333-0E14-4068-B89A-D38D484DF803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPC.Exceptions", "src\EPC.Exceptions\EPC.Exceptions.csproj", "{1DF7AC75-F195-47D5-9966-F47F816F09CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +13,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F9E9816-58EB-43DF-A6FD-8FE7E747156C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F9E9816-58EB-43DF-A6FD-8FE7E747156C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F9E9816-58EB-43DF-A6FD-8FE7E747156C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F9E9816-58EB-43DF-A6FD-8FE7E747156C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF7AC75-F195-47D5-9966-F47F816F09CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF7AC75-F195-47D5-9966-F47F816F09CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF7AC75-F195-47D5-9966-F47F816F09CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF7AC75-F195-47D5-9966-F47F816F09CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1DF7AC75-F195-47D5-9966-F47F816F09CB} = {56F6B333-0E14-4068-B89A-D38D484DF803}
 	EndGlobalSection
 EndGlobal
